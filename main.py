@@ -6,6 +6,11 @@ import json
 # to set up docker ollama use: docker run -d --gpus=all -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
 # to download a new model use ex: docker exec -it ollama ollama run llama2:
 # to check is ollama is running visit: http://localhost:11434/ in your browser
+
+# model list:
+# mixtral:8x7b-instruct-v0.1-q3_K_M
+# gemma2:27b
+
 url = "http://localhost:11434/api/generate"
 headers = {"Content-Type": "applicationm/json"}
 data = {
