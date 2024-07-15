@@ -14,8 +14,18 @@ import json
 url = "http://localhost:11434/api/generate"
 headers = {"Content-Type": "applicationm/json"}
 data = {
-    "model": "gemma2:27b",
-    "prompt": "I am going to give you some background information. Using this,can you write a program for me?",
+    "model": "mixtral:8x7b-instruct-v0.1-q3_K_M",
+    "prompt": "Write a proposal from my company, GreenTech Solutions, to the department of national defence. \
+        We are proposing to do a study where we will simulate the effects of a 45MW solar farm on the base. \
+        This will improve the resiliency of the base in extremem weather events such as hurricanes and \
+        help in their objective of reducing greenhouse gas emissions for operating and maintaining their \
+        buildings. GreenTech solutions proposes a 3 step study: Step 1 is to simulate the loads at the \
+        base by developing archetypes of each building and building a virtual grid. Step two of the study \
+        will involve studying the placement of the solar farm, the specific solar panels and the angle at \
+        which the panels will be oriented. During this phase, we will determine the peak solar output and \
+        size it to meet the capacity of the base. Finally in step three, we will size a battery storage \
+        solution that can help retain energy during after hours so the base continues to have power when the \
+        sun goes down",
     "stream": False,
 }
 
